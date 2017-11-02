@@ -1,0 +1,310 @@
+<html>
+	<head>
+		<title>Profile</title>
+		<link href = "style.css" type = "text/css" rel = "stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src = "script.js"></script>
+		<meta name = "viewport" content = "width = device-width">
+		<meta name = "viewport" content = "width = 320">
+		<link media="only screen and (max-device-width: 480px)"
+            href="iphone.css" type="text/css" rel="stylesheet" /> 
+	</head>
+
+	<style>
+		body {
+			width: 320px;
+		    font: 12pt Helvetica, sans-serif;
+		    background-color: #e5fcfd;
+		    /*background-color: white;*/
+		    height: 140%;
+		} 
+
+		.toolbar {
+			position: relative;
+			z-index: 10;
+			background-color: #15b6b8;
+			display: block;
+			width: 100%;
+			text-align: center;
+			height: 40px;
+		}
+		.tools {
+			display: inline-block;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-top: 5px;
+			cursor: pointer;
+			text-decoration: none;
+			font-size: 14;
+			color: black;
+		}
+
+		#tool1 {
+			font-size: 30;
+			font-family: Lobster Two;
+		}
+		.drop {
+		    position: relative;
+		    display: inline-block;
+		}
+
+		.dropdown {
+		    display: none;
+		    background-color: #15b6b8;
+		    position: absolute;
+		    min-width: 66px;
+		    /*box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);*/
+		    z-index: 3;
+		    padding-bottom: 5px;
+		    right: 0;
+		    top: 22;
+		}
+
+		.dropdown a {
+		    color: black;
+		    background-color: #15b6b8;
+		    text-decoration: none;
+		    display: block;
+		}
+
+		.dropdown a:hover {background-color: gray;}
+
+		.drop:hover .dropdown {
+		    display: block;
+		}
+
+		.drop:hover .dropbtn {
+		    background-color: blue;
+		}
+
+		#profile_pic {
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			background-color: white;
+			margin-left: 10%;
+			margin-top: 15px;
+			text-align: center;
+			box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+		}
+
+		#name {
+			font-size: 20;
+			font-family: Lobster Two;
+			margin-left: 20%;
+			margin-top: 120px;
+		}
+
+		#about {
+			position: absolute;
+			right: 0;
+			margin-top: 15px;
+			font-size: 12;
+			text-align: left;
+			width: 140px;
+		}
+
+		#box1 {
+			position: absolute;
+			height: 500px;
+			width: 100%;
+			background-color: white;
+			box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		p {
+			font-size: 12;
+		}
+
+		a {
+			color: black;
+			font-size: 12;
+		}
+
+	</style>
+
+	<script>
+	
+		$(document).ready( function(){
+
+		    $('#dropdown2').click( function(event){
+		        event.stopPropagation();
+		        $('#drop2').toggle();
+		    });
+		    
+		
+		    $(document).click( function(){
+		        $('#drop2').hide();
+			});
+
+		});
+	</script> 
+	<body>
+		<div class = "toolbar">
+			<a href = home.html><div class="tools" id="tool1"> blossom </div></a>
+			<a class="tools" id="tool2" href = "media.html"> Videos </a>
+			<a class="tools" id="tool3" href = "article.html"> Articles </a>
+			<a class="tools" id="tool3" href = "home.html"> Advice </a>
+			<div class = "drop">	
+				<div class="tools" id="tool4"> More </div>
+					<div class = "dropdown">
+						<a> Emotional </a>
+						<a> Physical </a>
+						<a> Sexual </a>
+						<a> Mental </a>
+						<a> Help </a>
+					</div>
+			</div>
+		</div>
+
+		<div id = "profile_pic"> 
+			
+		</div>
+	
+		<div id = "about">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius dapibus nibh non dignissim. 
+		</div>
+
+		<div id = "name">
+			Erin
+		</div>
+
+		
+
+		<div id = "box1">
+		<h4>Check your interests</h4>
+			<div id ="checkboxes">
+				
+				<label class="container">One
+				  <input type="checkbox" checked="checked">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Two
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Three
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Four
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Two
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Three
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				
+				
+				
+			</div>
+			<h4> Check other interests </h4>
+			
+			<div id ="checkboxes">
+				
+				<label class="container">One
+				  <input type="checkbox" checked="checked">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Two
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Three
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Four
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Two
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Three
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Four
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Three
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Four
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				
+				
+			</div>
+			
+			<h4> Check more interests </h4>
+			
+			<div id ="checkboxes">
+				
+				<label class="container">One
+				  <input type="checkbox" checked="checked">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Two
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Three
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Four
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Two
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Three
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Four
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Two
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Three
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container">Four
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+				
+				
+			</div>
+			
+		</div>
+
+
+
+	</body>
+
+</html>

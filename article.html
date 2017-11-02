@@ -1,0 +1,235 @@
+<html>
+	<head>
+		<title>Article</title>
+		<link href = "style.css" type = "text/css" rel = "stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src = "script.js"></script>
+		<meta name = "viewport" content = "width = device-width">
+		<meta name = "viewport" content = "width = 320">
+		<link media="only screen and (max-device-width: 480px)"
+            href="iphone.css" type="text/css" rel="stylesheet" /> 
+	</head>
+
+	<style>
+
+		body {
+			position: absolute;
+			width: 320px;
+		    font: 12pt Helvetica, sans-serif;
+		    background-color: #15b6b8;
+		    height: 240%;
+
+		} 
+
+		.toolbar {
+			position: relative;
+			z-index: 10;
+			background-color: #15b6b8;
+			display: block;
+			width: 100%;
+			text-align: center;
+			height: 40px;
+		}
+
+		.tools {
+			display: inline-block;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-top: 5px;
+			cursor: pointer;
+			text-decoration: none;
+			font-size: 14;
+			/*font-family: Lobster Two;*/
+			color: black;
+		}
+
+		#tool1 {
+			font-size: 30;
+			font-family: Lobster Two;
+
+		}
+
+		.drop {
+		    position: relative;
+		    display: inline-block;
+		}
+
+		.dropdown {
+		    display: none;
+		    background-color: #15b6b8;
+		    position: absolute;
+		    min-width: 66px;
+		    /*box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);*/
+		    z-index: 3;
+		    padding-bottom: 5px;
+		    right: 0;
+		    top: 22;
+		}
+
+		.dropdown a {
+		    color: black;
+		    background-color: #15b6b8;
+		    text-decoration: none;
+		    display: block;
+		    font-size: 12;
+		}
+
+		.dropdown a:hover {
+			background-color: gray;
+			
+		}
+
+		.drop:hover .dropdown {
+		    display: block;
+		}
+
+		.drop:hover .dropbtn {
+		    background-color: blue;
+		}
+
+		#box1 {
+			position: absolute;
+			background-color: #ADD8E6;
+			width: 100%;
+			height: 180px;
+			margin-top: -15px;
+			text-align: center;
+			font-size: 40;
+		}
+
+		#box2 {
+			position: absolute;
+			height: 400px;
+			width: 100%;
+			background-color: white;
+			box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+			margin-top: 165px;
+			text-align: center;
+		}
+
+		#box3 {
+			position: absolute;
+			background-color: #ADD8E6;
+			width: 100%;
+			height: 180px;
+			margin-top: 560px;
+			text-align: center;
+			font-size: 40;
+		}
+
+		#box4 {
+			position: absolute;
+			height: 210px;
+			width: 100%;
+			background-color: white;
+			box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+			margin-top: 726px;
+			text-align: center;
+		}
+		
+		#box5 {
+			position: absolute;
+			height: 180px;
+			width: 100%;
+			background-color: white;
+			box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+			margin-top: 935px;
+			text-align: center;
+		}
+
+		p {
+			font-size: 12;
+		}
+
+		#picture {
+			position: absolute;
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+			background-color: white;
+			margin-left: 25px;
+			margin-top: 10px;
+			bottom: 60;
+		}
+
+		#about {
+			width: 180px;
+			position: absolute;
+			bottom: 50;
+			text-align: left;
+			margin-left: 120px;
+			font-size: 12;
+
+		}
+
+	</style>
+	
+	<script>
+	
+		$(document).ready( function(){
+
+		    $('#dropdown2').click( function(event){
+		        event.stopPropagation();
+		        $('#drop2').toggle();
+		    });
+		    
+		
+		    $(document).click( function(){
+		        $('#drop2').hide();
+			});
+
+		});
+	</script> 
+
+	<body>
+		<div class = "toolbar">
+			<a href = "home.html"><div class="tools" id="tool1"> blossom </div></a>
+			<a class="tools" id="tool2" href = "media2.html"> Videos  </a>
+			<a class="tools" id="tool3" href = "article.html"> Articles </a>
+			<a class="tools" id="tool3" href = "home.html"> Advice </a>
+			<div class = "drop">	
+				<div class="tools" id="tool4"> More </div>
+					<div class = "dropdown">
+						<a> Emotional </a>
+						<a> Physical </a>
+						<a> Sexual </a>
+						<a> Mental </a>
+						<a> Help </a>
+					</div>
+			</div>
+		</div>
+
+		<div id = "box1">
+			<img id="cancer" src = cancer.jpg width = "100%">
+		</div>
+
+		<div id = "box2">
+		box2
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in fermentum turpis. Ut laoreet pulvinar enim, ut ornare velit fringilla nec. Ut auctor venenatis tempor. Aliquam venenatis condimentum nibh at volutpat. Aliquam in libero non tellus ornare commodo ac ut ante. Praesent nibh ipsum, accumsan non lorem et, blandit euismod sem. Sed faucibus sodales odio, a interdum urna pulvinar ac. Vivamus dapibus condimentum nulla non condimentum. Morbi a nibh ac mi aliquet dictum. Aenean mi tellus, congue et vulputate sagittis, interdum non tellus. Sed venenatis scelerisque fermentum. Proin ullamcorper blandit neque, rhoncus efficitur nibh auctor id. Donec fringilla iaculis leo ut tempus. Proin gravida neque eget ullamcorper suscipit.</p>
+		<p>Nam cursus mi ac erat scelerisque consequat. Donec enim sapien, consequat ut posuere non, tristique vel lorem. Curabitur ultricies mauris ac scelerisque scelerisque. Donec tempor eros et porttitor dictum. Maecenas eget mi tincidunt, luctus tellus a, commodo neque. Phasellus vehicula enim nec aliquet mattis. Aenean fringilla dignissim vestibulum. Phasellus tempor ex aliquet purus tincidunt maximus. Donec vulputate euismod efficitur. Nullam sit amet lobortis nibh. Nulla maximus id nibh eget rhoncus. Morbi orci erat, interdum a lectus sodales, eleifend pellentesque erat. Nam gravida ligula ac condimentum volutpat.</p>
+		</div>
+
+		<div id = "box3">			
+			<img id="exam" src = exam.jpg width = "100%">
+		</div>
+
+		<div id = "box4"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in fermentum turpis. Ut laoreet pulvinar enim, ut ornare velit fringilla nec. Ut auctor venenatis tempor. Aliquam venenatis condimentum nibh at volutpat. Aliquam in libero non tellus ornare commodo ac ut ante. Praesent nibh ipsum, accumsan non lorem et, blandit euismod sem. Sed faucibus sodales odio, a interdum urna pulvinar ac. Vivamus dapibus condimentum nulla non condimentum. Morbi a nibh ac mi aliquet dictum. Aenean mi tellus, congue et vulputate sagittis, interdum non tellus. Sed venenatis scelerisque fermentum. Proin ullamcorper blandit neque, rhoncus efficitur nibh auctor id. Donec fringilla iaculis leo ut tempus. Proin gravida neque eget ullamcorper suscipit.</p></div>
+
+		<div id = "picture">
+		</div>
+
+		<div id = "about">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in fermentum turpis. Ut laoreet pulvinar enim, ut ornare velit fringilla nec.
+		</div>
+		
+		<div id = "box5">			
+			<img id="abc" src = abc.jpg width = "100%">
+		</div>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,560 @@
+<html>
+	<head>
+		<title>Blossom</title>
+		<link href = "style.css" type = "text/css" rel = "stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta name = "viewport" content = "width = device-width">
+		<meta name = "viewport" content = "width = 320">
+		<link media="only screen and (max-device-width: 480px)"
+            href="iphone.css" type="text/css" rel="stylesheet" /> 
+	</head>
+
+
+	<style>
+		body {
+		    width: 320px;
+		    font: 12pt Helvetica, sans-serif;
+		    background-color: #e5fcfd;
+		    height: 400%;
+		} 
+		img, table {
+		    max-width: 320px;
+		} 
+
+		.toolbar {
+			position: absolute;
+			top: 170px;
+			z-index: 10;
+			background-color: #15b6b8;
+			display: block;
+			width: 100%;
+			text-align: center;
+			height: 30px;
+		}
+
+		.tools {
+			display: inline-block;
+			margin-left: 8px;
+			margin-right: 8px;
+			margin-top: 5px;
+			cursor: pointer;
+			text-decoration: none;
+			font-size: 16;
+			color: black;
+			font-family: Lobster Two ;
+		}
+
+		#tool1 {
+			font-size: 30;
+			font-family: Great Vibes;
+		}
+
+		#box1 {
+			position: absolute;
+			background-color: white;
+			width: 150px;
+			height: 130px;
+			margin-left: 5px;
+			margin-top: 140px;
+			/*border-radius: 15%;*/
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		#box2 {
+			position: absolute;
+			background-color: white;
+			width: 150px;
+			height: 130px;
+			margin-left: 165px;
+			margin-top: 140px;
+			/*border-radius: 15%;*/
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		#box3 {
+			position: absolute;
+			background-color: white;
+			width: 100%;
+			height: 180px;
+			/*margin-top: 5px;*/
+			text-align: center;
+		}
+		
+		
+		
+
+		#box4 {
+			position: absolute;
+			background-color: white;
+			width: 310px;
+			height: 190px;
+			margin-left: 5px;
+			margin-top: 280px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		#box5 {
+			position: absolute;
+			background-color: white;
+			width: 310px;
+			height: 150px;
+			margin-left: 5px;
+			margin-top: 490px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		#box6 {
+			position: absolute;
+			background-color: white;
+			width: 150px;
+			height: 130px;
+			margin-left: 5px;
+			margin-top: 670px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			
+		}
+
+		#box7 {
+			position: absolute;
+			background-color: white;
+			width: 150px;
+			height: 130px;
+			margin-left: 165px;
+			margin-top: 670px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		#box8 {
+			position: absolute;
+			background-color: white;
+			width: 150px;
+			height: 130px;
+			margin-left: 5px;
+			margin-top: 850px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			
+		}
+
+		#box9 {
+			position: absolute;
+			background-color: white;
+			width: 150px;
+			height: 130px;
+			margin-left: 165px;
+			margin-top: 850px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			
+		}
+
+		#box12 {
+			position: absolute;
+			background-color: white;
+			width: 150px;
+			height: 130px;
+			margin-left: 5px;
+			margin-top: 990px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			
+		}
+
+		#box13 {
+			position: absolute;
+			background-color: white;
+			width: 150px;
+			height: 130px;
+			margin-left: 165px;
+			margin-top: 990px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			
+		}
+
+		#box10 {
+			position: absolute;
+			background-color: white;
+			width: 310px;
+			height: 150px;
+			margin-left: 5px;
+			margin-top: 1165px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		#box11 {
+			position: absolute;
+			background-color: white;
+			width: 310px;
+			height: 110px;
+			margin-left: 5px;
+			margin-top: 1345px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+		
+		#box14 {
+			position: absolute;
+			background-color: white;
+			width: 310px;
+			height: 170px;
+			margin-left: 5px;
+			margin-top: 1485px;
+			text-align: center;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+		input[type=text] {
+			position: absolute;
+			z-index: 9;
+		    width: 200px;
+		    box-sizing: border-box;
+		    border: 2px solid #ccc;
+		    border-radius: 4px;
+		    font-size: 14px;
+		    background-color: white;
+		    margin-top: 250px;
+		    right: 0px;
+		    background-repeat: no-repeat;
+		    -webkit-transition: width 0.4s ease-in-out;
+		    transition: width 0.4s ease-in-out;
+		}
+
+
+		.drop{
+		    position: relative;
+		    display: inline-block;
+		}
+
+		.dropdown {
+		    display: none;
+		    background-color: #15b6b8;
+		    position: absolute;
+		    min-width: 70px;
+		    z-index: 3;
+		    padding-bottom: 5px;
+		    top: 27;
+		}
+		
+
+		.dropdown a {
+		    color: black;
+		    background-color: #15b6b8;
+		    text-decoration: none;
+		    display: block;
+		    font-size: 12;
+		}
+
+		.dropdown a:hover {background-color: gray;}
+
+		.drop:hover .dropdown {
+		    display: block;
+		}
+
+		.drop:hover .dropbtn {
+		    background-color: blue;
+		}
+		
+		.drop2 {
+		    position: relative;
+		    display: inline-block;
+		    height: 15px;
+		}
+
+		.dropdown2 {
+		    display: none;
+		    background-color: #15b6b8;
+		    position: relative;
+		    min-width: 70px;
+		    left: 100%;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    margin-top: -1;
+		    top: -14;
+		}
+		
+
+		.dropdown2 a {
+		    color: black;
+		    text-decoration: none;
+		    display: block;
+		    font-size: 12;
+		}
+
+		.dropdown2 a:hover {background-color: gray;}
+
+		.drop2:hover .dropdown2 {
+		    display: block;
+		}
+
+		.drop2:hover .dropbtn {
+		    background-color: blue;
+		}
+		
+		.submenu {
+			display: inline-block;
+			cursor: pointer;
+			text-decoration: none;
+			font-size: 16;
+			color: black;
+		}
+
+		#text1 {
+			margin-top: 264px;
+			position: absolute;
+			font-size: 12;
+			margin-left: 2px;
+		}
+
+		#text2 {
+			margin-top: 458px;
+			position: absolute;
+			z-index: 10;
+			font-size: 16;
+			margin-left: 30px;
+			color: white;
+		}
+
+		#text3 {
+			margin-top: 830px;
+			position: absolute;
+			z-index: 10;
+			font-size: 12;
+			margin-left: 5px;
+		}
+
+		#text4 {
+			margin-top: 1145px;
+			position: absolute;
+			z-index: 10;
+			font-size: 12;
+			margin-left: 5px;
+		}
+
+		a {
+			color: black;
+		}
+		
+		#title {
+			position: absolute;
+			margin-top: 136px;
+			font-size: 25px;
+			margin-left: 115px;
+			font-family: Lobster Two;
+			z-index: 9;
+		}
+		
+		#icon {
+			position: absolute;
+			margin-top: 140px;
+			font-size: 25px;
+			width: 25px;
+			margin-left: 195px;
+			font-family: Lobster Two;
+			z-index: 9;
+		}
+
+		#logo {
+			margin-top: 15px;
+		}
+
+	</style>
+	
+	<script>
+	
+		$(document).ready( function(){
+
+		    $('#dropdown2').click( function(event){
+		        event.stopPropagation();
+		        $('#drop2').toggle();
+		    });
+		    
+		
+		    $(document).click( function(){
+		        $('#drop2').hide();
+			});
+
+		});
+		
+		$(document).ready( function(){
+
+		    $('#dropdown').click( function(event){
+		        event.stopPropagation();
+		        $('#drop').toggle();
+		    });
+		    
+		
+		    $(document).click( function(){
+		        $('#drop').hide();
+			});
+		});
+
+	
+		
+		
+	</script>
+
+
+
+	<body>
+		
+		<div id = "title">
+			blossom
+		</div>
+		
+		<div id="icon">
+			<a href = "profile.html"> 
+				<img id="p_icon" src="profile_icon.png" width = "100%"> 
+			</a>
+		</div>
+
+		<form>
+		  <input type="text" name="search" placeholder="Search..">
+		</form>
+		
+		<div class = "toolbar">
+			<div class = "drop">	
+				<div class="tools" id="tool4"> Emotional </div>
+					<div class = "dropdown">
+						<a> Sad </a>
+						<a> Tired </a>
+						<a> Happy </a>
+						<a> Love </a>
+						<a> Anger </a>
+					</div>
+			</div>
+			<div class = "drop">	
+				<div class="tools" id="tool4"> Physical </div>
+					<div class = "dropdown">
+						<a> Hair </a>
+						<a> Skin </a>
+						
+						<div class = "drop2">	
+							<a class = "submenu"> Weight </a>
+								<div class = "dropdown2">
+									<a> Loss </a>
+									<a> Gain </a>
+									<a> Period </a>
+									<a href = "article.html"> Hormones </a>
+								</div>
+						</div>
+						
+						<div class = "drop2">	
+							<a class = "submenu"> Breasts </a>
+								<div class = "dropdown2">
+									<a> Bras </a>
+									<a> Periods </a>
+									<a> Pain </a>
+									<a href = "article.html"> Exam </a>
+								</div>
+						</div>
+						
+					</div>
+			</div>
+			<div class = "drop">	
+				<div class="tools" id="tool4"> Sexual </div>
+					<div class = "dropdown">
+						<a> Advice </a>
+						<a> Periods </a>
+						<a> Sex </a>
+						<a> Boys </a>
+						<a> Girls </a>
+					</div>
+			</div>
+			<div class = "drop">	
+				<div class="tools" id="tool4"> Mental </div>
+					<div class = "dropdown">
+						<a> Stress </a>
+						<a> Sadness </a>
+						<a> Help </a>
+						<a> Tips </a>
+					</div>
+			</div>
+				
+		</div>
+
+		<div id = "text1"> 
+			Picked for you
+		</div>
+
+		<!--<div id = "text2" > Makeup: How to start and when.-->
+		<!--</div>-->
+
+		<div id = "text3"> Body
+		</div>
+
+		<div id = "text4"> How to's
+		</div>
+		
+		<!--<a id = "box1" href = "article.html">-->
+		<!--	Box1-->
+		<!--</a>-->
+
+		<!--<div id = "box2">-->
+		<!--	Box2-->
+		<!--</div>-->
+
+		<div id = "box3">
+			<img id = logo src=logo3.png width="70%">
+			
+		</div>
+
+
+		<div id = "box4">
+			<a href = "media.html"> <img id = mascara src=mascara.jpg width="100%"></a>
+		</div>
+
+		<div id = "box5">
+			<img id=razor src=razor.jpg width=100%>
+		</div>
+
+		<div id = "box6">
+			<img id=bras src=bras.jpg width=100%>
+		</div>
+
+		<div id = "box7">
+			<img id=couples src=couples.jpg width=100%>
+		</div>
+
+		<div id = "box8">
+			<img id=acne src=acne.jpg width=100%>
+		</div>
+
+		<div id = "box9">
+			<img id=deo src=deodorant.jpg width=100%>
+		</div>
+
+
+		<div id = "box10">
+			<img id=tampon src=tampon.png width=100%>
+		</div>
+
+
+		<div id = "box11">
+			<img id=perfume src=perfume.jpg width=100%>
+		</div>
+
+		<div id = "box12">
+			<img id=book src=book.jpg width=100%>
+		</div>
+
+
+		<div id = "box13">
+			<img id=stress src=stress.jpg width=100%>
+		</div>
+		
+		<div id = "box14">
+			<img id=girls src=girls.jpg width=100%>
+		</div>
+		
+	</body>
+</html>
