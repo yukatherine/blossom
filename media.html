@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Media</title>
+		<title>10 Tips</title>
 		<link href = "style.css" type = "text/css" rel = "stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,8 +19,8 @@
 			position: absolute;
 			width: 320px;
 		    font: 12pt Helvetica, sans-serif;
-		    background-color: #e5fcfd;
-		    overflow: initial;
+		    background-color: white;
+		    height: 300%;
 
 		} 
 
@@ -42,6 +42,7 @@
 			cursor: pointer;
 			text-decoration: none;
 			font-size: 14;
+			/*font-family: Lobster Two;*/
 			color: black;
 		}
 
@@ -78,6 +79,7 @@
 
 		.dropdown a:hover {
 			background-color: gray;
+			
 		}
 
 		.drop:hover .dropdown {
@@ -88,34 +90,84 @@
 		    background-color: blue;
 		}
 
-		#title {
-			font-family: Lobster Two;
-			font-size: 28;
-			text-align: center;
-			margin-bottom: 0;
-		}
-
 		#box1 {
-			background-color: white;
-			height: 180px;
+			position: absolute;
+			height: 740px;
 			width: 100%;
-			margin-top: 10px;
-			box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+			background-color: white;
+			/*box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);*/
+			margin-top: 200px;
+			text-align: center;
+			font-size: 12;
 		}
 
-
-		#text {
-			margin: 10px;
+		#box2 {
+			position: absolute;
+			background-color: white;
+			width: 100%;
+			height: 90px;
+			margin-top: 20px;
+			text-align: center;
+			font-size: 40;
+			z-index: 12;
+			
 		}
 
-		p { 
-		font-size: 12;
-		 }
-
-		 a {
-			color: black;
+		#box3 {
+			position: absolute;
+			background-color: #ADD8E6;
+			width: 100%;
+			height: 180px;
+			margin-top: 500px;
+			text-align: center;
+			font-size: 40;
 		}
 
+		#box4 {
+			position: absolute;
+			height: 210px;
+			width: 100%;
+			background-color: white;
+			/*box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);*/
+			margin-top: 744px;
+			text-align: center;
+		}
+		
+
+
+		p {
+			font-size: 12;
+		}
+
+		#picture {
+			position: absolute;
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+			background-color: white;
+			margin-left: 25px;
+			margin-top: 700%;
+			
+		}
+
+		#about {
+			width: 180px;
+			position: absolute;
+			text-align: left;
+			margin-top: 700%;
+			margin-left: 30%;
+			font-size: 8;
+			z-index: 12;
+
+		}
+	
+	
+		#title {
+			margin-top: 15px;
+			font-size: 22;
+			text-align: center;
+			font-family: Lobster Two;
+		}
 	</style>
 	
 	<script>
@@ -138,34 +190,142 @@
 	<body>
 		<div class = "toolbar">
 			<a href = "home.html"><div class="tools" id="tool1"> blossom </div></a>
-			<a class="tools" id="tool2" href = "media.html"> Videos  </a>
-			<a class="tools" id="tool3" href = "article.html"> Articles </a>
-			<a class="tools" id="tool3" href = "home.html"> Advice </a>
-			<div class = "drop">	
-				<div class="tools" id="tool4"> More </div>
-					<div class = "dropdown">
-						<a> Emotional </a>
-						<a> Physical </a>
-						<a> Sexual </a>
-						<a> Mental </a>
-					</div>
-			</div>
+			
 		</div>
+		
+		<div id = "title">10 Characteristics of a Healthy Relationship</div>
 
-		<div id = "title"> 
-			Makeup
+		<div id = "box2">
+			<img src = ew.jpg width = "100%">
 		</div>
 
 		<div id = "box1">
-			<img src=lash.png width = "100%">
+			
+		<p>We all desire to have a relationship that is filled with happiness,
+		joy, and, most importantly, love.</p>
+		
+<p>Unfortunately, for many of us, we've been exposed to so many unhealthy 
+relationships in our lives that we don't know what a truly healthy relationship
+even looks and feels like. So here are 10 characteristics of a healthy 
+relationship:</p>
+
+<p>1. Both partners know that they are responsible for their own individual 
+happiness.</p>
+
+<p>Many people unfortunately fall into the bad habit of believing and 
+expecting that our partner is meant to be our source of all happiness, 
+love and fulfillment in our lives. However, in a truly vibrant and healthy 
+relationship, neither partner expects the other to be the source of all their
+happiness in life. Both people know and understand that they themselves 
+are responsible for their own happiness and well-being. They each know that
+they are there to support and help one another, but they both know that they
+are ultimately responsible for themselves.</p>
+
+
 		</div>
 
-		<div id = "text">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in fermentum turpis. Ut laoreet pulvinar enim, ut ornare velit fringilla nec. Ut auctor venenatis tempor. Aliquam venenatis condimentum nibh at volutpat. Aliquam in libero non tellus ornare commodo ac ut ante. Praesent nibh ipsum, accumsan non lorem et, blandit euismod sem. Sed faucibus sodales odio, a interdum urna pulvinar ac. Vivamus dapibus condimentum nulla non condimentum. Morbi a nibh ac mi aliquet dictum. Aenean mi tellus, congue et vulputate sagittis, interdum non tellus. Sed venenatis scelerisque fermentum. Proin ullamcorper blandit neque, rhoncus efficitur nibh auctor id. Donec fringilla iaculis leo ut tempus. Proin gravida neque eget ullamcorper suscipit.
-
-			</p>
+		<div id = "box3">			
+			<img src = "quote.jpg" width = "100%">
 		</div>
 
+		<div id = "box4">
+			<p> 2. Neither person is really trying to control or fix the 
+			other person.</p>
+			
+<p>If one person is more of a procrastinator while the other always gets their
+work done early, the other person isn’t going to try to fix them by pushing 
+them to get their work done early in a healthy relationship. Both people 
+respect one another’s differences. One doesnt try to force the other to change 
+or be anything different then themselves.</p>
+
+<p>The reality is that nobody wants to be changed or fixed — especially if it's
+unsolicited! If the person really truly wants to change, then they will ask 
+for help on their own terms and in their own way. Change isn't going to happen
+through nagging or force.</p>
+
+<p>3. The relationship is balanced.</p>
+
+<p>No one person has any more power over decisions made as a couple than 
+the other. Both people have an equal say and have equal control over decisions
+made and both equally respect each other as a different and unique human being.</p>
+
+<p>Now, it may be that the decisions made are different for each person. 
+Such as, one person is more focused on interior decorations while the other 
+is more focused on finances because it better highlights each person’s 
+strengths. But, aggregately, everything is 50-50.</p>
+
+<p>4. Conflicts are dealt with head-on and then dropped.</p>
+
+<p>In a heathy relationship, conflicts aren't a deal breaker. 
+Just because a conflict happens, it doesn't signal that it's time to just 
+check out and move on to something else. Rather, the conflict is seen as an 
+opportunity to learn and grow. Both sides openly share their feelings and 
+views honestly and with respect.</p>
+
+<p>Conflict is accepted as a natural part of life and any frustrations are 
+dealt with early rather than repressed and brought back up time and time again.</p>
+
+<p>5. Feelings are shared honestly and openly.</p>
+
+<p>Both people share their genuine feelings with one another freely. 
+Both partners respect and accept the other’s feelings. Expressing one another’s
+true feelings aren’t repressed because both partners know that by not sharing 
+them and that by not accepting the other person’s feelings it will cause 
+conflicts later on.</p>
+
+<p>6. Each person makes time to take care of themselves.</p>
+
+<p>Both people in the relationship understand and know that self-care is an 
+absolutely vital component for a healthy relationship. They know that if they
+don’t take care of themselves and do things for themselves that they will be 
+stressed, drained, and exhausted. They know that when they don’t take care of 
+themselves, they have little love to give to their partner.</p>
+
+<p>7. Both partners are willing to put the relationship before themselves.</p>
+
+<p>In a healthy relationship, both partners are able and willing to consider 
+their partner when making decisions. They don’t just go off and plan a trip 
+for themselves without discussing it with the other person. They make room in
+their lives for the other person and are willing to work together as a unit.</p>
+
+<p>8. Both people understand and accept that they’re not going to agree on 
+everything.</p>
+
+<p>In a healthy relationship, both partners know that it is perfectly okay to
+agree to disagree. They know that just because one partner has one viewpoint, 
+it doesn’t mean that the other has to completely agree. They know that having 
+differences in opinion and beliefs doesn’t have to be a deal breaker.</p>
+
+<p>9. They both truly value the relationship.</p>
+
+<p>Both partners are loyal to one another and willing to work through 
+conflicts together. They both truly believe in the relationship and are 
+committing to the lessons and growth that come while being together — despite 
+the challenges that come up.</p>
+
+<p>10. They want to be together simply for the sake of being together.</p>
+
+<p>For some of us, we can find ourselves staying in a relationship because 
+we want some kind of security. That can be emotional, physical, financial, 
+or whatever. In a truly healthy relationship both people want to be together
+because they genuinely want to be together for the sake of living a life with 
+the other person. Security isn’t a primary motivation to be in the relationship,
+as the motivation of genuine love runs so much deeper than the security that 
+can be gained on a physical level.</p>
+</div>
+
+		<div id = "picture"> <img src = person.jpg width = "100%">
+		</div>
+
+		<div id = "about">
+			<p>Credit:  Huffingtonpost.com
+https://www.huffingtonpost.com/jennifer-twardowski/10-characteristics-of-a-healthy-relationship_b_8578954.html
+</p>
+<p>11/17/2015 09:37 am ET Updated Nov 17, 2016
+</p>
+			<p>By Jennifer Twardowski</p>
+		</div>
+		
 	</body>
 
 </html>

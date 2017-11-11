@@ -20,7 +20,7 @@
 			width: 320px;
 		    font: 12pt Helvetica, sans-serif;
 		    background-color: #15b6b8;
-		    height: 240%;
+		    height: 220%;
 
 		} 
 
@@ -92,22 +92,25 @@
 
 		#box1 {
 			position: absolute;
-			background-color: #ADD8E6;
+			height: 500px;
 			width: 100%;
-			height: 180px;
-			margin-top: -15px;
+			background-color: white;
+			box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+			margin-top: 5px;
 			text-align: center;
-			font-size: 40;
+			font-size: 12;
 		}
 
 		#box2 {
 			position: absolute;
-			height: 400px;
+			background-color: #ADD8E6;
 			width: 100%;
-			background-color: white;
-			box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
-			margin-top: 165px;
+			height: 3900px;
+			margin-top: 435px;
 			text-align: center;
+			font-size: 40;
+			z-index: 12;
+			
 		}
 
 		#box3 {
@@ -132,11 +135,11 @@
 		
 		#box5 {
 			position: absolute;
-			height: 180px;
+			height: 90px;
 			width: 100%;
 			background-color: white;
 			box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
-			margin-top: 935px;
+			margin-top: 880px;
 			text-align: center;
 		}
 
@@ -158,13 +161,17 @@
 		#about {
 			width: 180px;
 			position: absolute;
-			bottom: 50;
+			margin-top: 900px;
 			text-align: left;
-			margin-left: 120px;
-			font-size: 12;
+			font-size: 8;
+			z-index: 12;
 
 		}
-
+	
+	
+		#how {
+			font-size: 16;
+		}
 	</style>
 	
 	<script>
@@ -202,31 +209,42 @@
 			</div>
 		</div>
 
-		<div id = "box1">
-			<img id="cancer" src = cancer.jpg width = "100%">
-		</div>
-
 		<div id = "box2">
-		box2
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in fermentum turpis. Ut laoreet pulvinar enim, ut ornare velit fringilla nec. Ut auctor venenatis tempor. Aliquam venenatis condimentum nibh at volutpat. Aliquam in libero non tellus ornare commodo ac ut ante. Praesent nibh ipsum, accumsan non lorem et, blandit euismod sem. Sed faucibus sodales odio, a interdum urna pulvinar ac. Vivamus dapibus condimentum nulla non condimentum. Morbi a nibh ac mi aliquet dictum. Aenean mi tellus, congue et vulputate sagittis, interdum non tellus. Sed venenatis scelerisque fermentum. Proin ullamcorper blandit neque, rhoncus efficitur nibh auctor id. Donec fringilla iaculis leo ut tempus. Proin gravida neque eget ullamcorper suscipit.</p>
-		<p>Nam cursus mi ac erat scelerisque consequat. Donec enim sapien, consequat ut posuere non, tristique vel lorem. Curabitur ultricies mauris ac scelerisque scelerisque. Donec tempor eros et porttitor dictum. Maecenas eget mi tincidunt, luctus tellus a, commodo neque. Phasellus vehicula enim nec aliquet mattis. Aenean fringilla dignissim vestibulum. Phasellus tempor ex aliquet purus tincidunt maximus. Donec vulputate euismod efficitur. Nullam sit amet lobortis nibh. Nulla maximus id nibh eget rhoncus. Morbi orci erat, interdum a lectus sodales, eleifend pellentesque erat. Nam gravida ligula ac condimentum volutpat.</p>
+			<img id="cancer" src = boobs.jpg width = "100%">
 		</div>
 
-		<div id = "box3">			
-			<img id="exam" src = exam.jpg width = "100%">
+		<div id = "box1">
+		<p id="how">How Should A Breast Self-Exam Be Performed? </p>
+			<p>By NationalBreastCancer.org</p>
+			<p>1) In the Shower 
+			Using the pads of your fingers, move around your entire breast in a circular pattern moving from the outside to the center, checking the entire breast and armpit area. Check both breasts each month feeling for any lump, thickening, or hardened knot. Notice any changes and get lumps evaluated by your healthcare provider.
+			</p>
+			<p>2) In Front of a Mirror 
+			Visually inspect your breasts with your arms at your sides. Next, raise your arms high overhead.
+			Look for any changes in the contour, any swelling, or dimpling of the skin, or changes in the nipples. Next, rest your palms on your hips and press firmly to flex your chest muscles. Left and right breasts will not exactly match—few women's breasts do, so look for any dimpling, puckering, or changes, particularly on one side.
+			</p>
+			<p>3) Lying Down
+			When lying down, the breast tissue spreads out evenly along the chest wall. Place a pillow under your right shoulder and your right arm behind your head. Using your left hand, move the pads of your fingers around your right breast gently in small circular motions covering the entire breast area and armpit.
+			Use light, medium, and firm pressure. Squeeze the nipple; check for discharge and lumps. Repeat these steps for your left breast.
+			</p>
 		</div>
 
-		<div id = "box4"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in fermentum turpis. Ut laoreet pulvinar enim, ut ornare velit fringilla nec. Ut auctor venenatis tempor. Aliquam venenatis condimentum nibh at volutpat. Aliquam in libero non tellus ornare commodo ac ut ante. Praesent nibh ipsum, accumsan non lorem et, blandit euismod sem. Sed faucibus sodales odio, a interdum urna pulvinar ac. Vivamus dapibus condimentum nulla non condimentum. Morbi a nibh ac mi aliquet dictum. Aenean mi tellus, congue et vulputate sagittis, interdum non tellus. Sed venenatis scelerisque fermentum. Proin ullamcorper blandit neque, rhoncus efficitur nibh auctor id. Donec fringilla iaculis leo ut tempus. Proin gravida neque eget ullamcorper suscipit.</p></div>
+		<!--<div id = "box3">			-->
+		<!--	<img id="exam" width = "100%">-->
+		<!--</div>-->
 
-		<div id = "picture">
-		</div>
+		<!--<div id = "box4"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in fermentum turpis. Ut laoreet pulvinar enim, ut ornare velit fringilla nec. Ut auctor venenatis tempor. Aliquam venenatis condimentum nibh at volutpat. Aliquam in libero non tellus ornare commodo ac ut ante. Praesent nibh ipsum, accumsan non lorem et, blandit euismod sem. Sed faucibus sodales odio, a interdum urna pulvinar ac. Vivamus dapibus condimentum nulla non condimentum. Morbi a nibh ac mi aliquet dictum. Aenean mi tellus, congue et vulputate sagittis, interdum non tellus. Sed venenatis scelerisque fermentum. Proin ullamcorper blandit neque, rhoncus efficitur nibh auctor id. Donec fringilla iaculis leo ut tempus. Proin gravida neque eget ullamcorper suscipit.</p></div>-->
+
+		<!--<div id = "picture">-->
+		<!--</div>-->
 
 		<div id = "about">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in fermentum turpis. Ut laoreet pulvinar enim, ut ornare velit fringilla nec.
+			<p>Credit: National Breast Cancer Organization </p>
+			<p>http://www.nationalbreastcancer.org/breast-self-exam</p>
 		</div>
 		
 		<div id = "box5">			
-			<img id="abc" src = abc.jpg width = "100%">
+			<img id="abc" src = cancer.jpg width = "100%">
 		</div>
 
 
